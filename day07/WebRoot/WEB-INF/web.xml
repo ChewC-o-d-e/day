@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>CookieIndexServlet</servlet-name>
+    <servlet-class>cn.itcast.store.cookie.CookieIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieDetailServlet</servlet-name>
+    <servlet-class>cn.itcast.store.cookie.CookieDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionIndex</servlet-name>
+    <servlet-class>cn.itcast.store.session.SessionIndex</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionCart</servlet-name>
+    <servlet-class>cn.itcast.store.session.SessionCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionBuy</servlet-name>
+    <servlet-class>cn.itcast.store.session.SessionBuy</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CookieIndexServlet</servlet-name>
+    <url-pattern>/servlet/CookieIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieDetailServlet</servlet-name>
+    <url-pattern>/servlet/CookieDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionIndex</servlet-name>
+    <url-pattern>/servlet/SessionIndex</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionCart</servlet-name>
+    <url-pattern>/servlet/SessionCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionBuy</servlet-name>
+    <url-pattern>/servlet/SessionBuy</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
